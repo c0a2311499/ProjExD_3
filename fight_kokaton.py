@@ -145,6 +145,10 @@ class Score:
         self.img = self.fonto.render(f"スコア：{self.score}", 0, (0, 0, 255))
         screen.blit(self.img,[100, 850])
 
+class multibeam:
+    def __init__(self):
+        
+
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
