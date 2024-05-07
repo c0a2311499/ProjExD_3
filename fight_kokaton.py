@@ -133,11 +133,11 @@ class Beam:
              self.rct.move_ip(self.vx, self.vy)
              screen.blit(self.img, self.rct)
 
-class Score:
+class Score:  # スコアの追加
     def __init__(self):
-        self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
+        self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)  # 表示する文字のフォントとサイズ設定
         self.score = 0
-        self.img = self.fonto.render(f"スコア：{self.score}", 0, (0, 0, 255))
+        self.img = self.fonto.render(f"スコア：{self.score}", 0, (0, 0, 255))  # 具体的に何を表示するか設定
         self.img_rct = self.img.get_rect()
         self.img_rct.center = 100, 850
 
